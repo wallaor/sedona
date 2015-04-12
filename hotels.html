@@ -3,7 +3,10 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Отели Седоны</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 <div class="main-container">
   <header>
     <nav>
@@ -16,7 +19,7 @@
         </li>
         <li class="index-logo">
           <a href="#">
-            <img src="/img/index-logo.png" width="50" height="50" alt="Главная">
+            <img src="img/logo-header.png" width="138" height="70" alt="Главная">
           </a>
         </li>
         <li>
@@ -32,11 +35,11 @@
     </nav>
   </header>
 
-  <div class="hotels">
+  <div class="content-container">
     <div class="filter">
       <form>
-        <div class="row clearfix">
-          <div class="column-span clearfix">
+        <div class="row">
+          <div class="column">
             <div class="filter-block">
               <h2>Инфраструктура:</h2>
 
@@ -55,6 +58,8 @@
                 <label for="wifi">Wi-Fi</label>
               </p>
             </div>
+          </div>
+          <div class="column">
             <div class="filter-block">
               <h2>Тип жилья:</h2>
 
@@ -91,7 +96,9 @@
               </div>
 
               <div class="range-slider"></div>
-              <p><input class="filter-block" type="submit" value="Показать"></p>
+              <p>
+                <input class="filter-block" type="submit" value="Показать">
+              </p>
             </div>
           </div>
         </div>
@@ -99,55 +106,53 @@
     </div>
 
     <div class="sort">
-      <div class="row clearfix">
-        <div class="column-span">
+      <div class="row">
+        <div class="left">
           <span class="filter-result">Найдено: 3</span>
           <span>Сортировка:</span>
-          <a class="active" href="#">по цене</a>
+          <a href="#">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по рейтингу</a>
         </div>
-        <div class="column">
+        <div class="right">
           <a href="#">
-            <span class="icon icon-arrow-up"></span>
+            <i class="icon icon-arrow-up"></i>
           </a>
           <a href="#">
-            <span class="icon icon-arrow-down"></span>
+            <i class="icon icon-arrow-down"></i>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="hotels-list">
+    <div class="hotels">
       <article>
-        <div class="row">
-          <img src="/img/hotel-1.jpg" width="60" height="60" alt="">
+        <img src="img/img-hotel-1.jpg" width="135" height="90" alt="">
 
-          <div class="row clearfix">
+        <div class="row">
+          <div class="left">
+            <h2>
+              <a href="#">Amara Resort & Spa</a>
+            </h2>
+          </div>
+          <div class="right">
+            <i class="icon icon-star"></i>
+            <i class="icon icon-star"></i>
+            <i class="icon icon-star"></i>
+            <i class="icon icon-star"></i>
+          </div>
+
+          <p>Гостиница от 3500 р.</p>
+
+          <div class="row">
             <div class="left">
-              <h2 class="hotel-name">
-                <a class="hotel-name" href="#">Amara Resort & Spa</a>
-              </h2>
+              <a class="btn btn-primary" href="#">Подробнее</a>
+            </div>
+            <div class="left">
+              <a class="btn btn-default" href="#">Забронировать</a>
             </div>
             <div class="right">
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
-            </div>
-
-            <p>Гостиница от 3500 р.</p>
-
-            <div class="row clearfix">
-              <div class="left">
-                <a class="btn btn-blue" href="#">Подробнее</a>
-              </div>
-              <div class="left">
-                <a class="btn btn-brown" href="#">Забронировать</a>
-              </div>
-              <div class="right">
-                <span class="rating">Рейтинг: 8,5</span>
-              </div>
+              <span class="rating">Рейтинг: 8,5</span>
             </div>
           </div>
         </div>
@@ -155,27 +160,27 @@
 
       <article>
         <div class="row">
-          <img src="/img/hotel-2.jpg" width="60" height="60" alt="">
+          <img src="img/img-hotel-2.jpg" width="135" height="90" alt="">
 
-          <div class="row clearfix">
+          <div class="row">
             <div class="left">
-              <h2 class="hotel-name">
-                <a class="hotel-name" href="#">Desert Quanil Inn</a>
+              <h2>
+                <a href="#">Desert Quanil Inn</a>
               </h2>
             </div>
             <div class="right">
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
+              <i class="icon icon-star"></i>
+              <i class="icon icon-star"></i>
             </div>
 
             <p>Мотель от 2000 р.</p>
 
-            <div class="row clearfix">
+            <div class="row">
               <div class="left">
-                <a class="btn btn-blue" href="#">Подробнее</a>
+                <a class="btn btn-primary" href="#">Подробнее</a>
               </div>
               <div class="left">
-                <a class="btn btn-brown" href="#">Забронировать</a>
+                <a class="btn btn-default" href="#">Забронировать</a>
               </div>
               <div class="right">
                 <span class="rating">Рейтинг: 8,9</span>
@@ -187,28 +192,28 @@
 
       <article>
         <div class="row">
-          <img src="/img/hotel-3.jpg" width="60" height="60" alt="">
+          <img src="img/img-hotel-3.jpg" width="135" height="90" alt="">
 
-          <div class="row clearfix">
+          <div class="row">
             <div class="left">
-              <h2 class="hotel-name">
-                <a class="hotel-name" href="#">Villas at Poco Diablo</a>
+              <h2>
+                <a href="#">Villas at Poco Diablo</a>
               </h2>
             </div>
             <div class="right">
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
-              <span class="icon icon-star"></span>
+              <i class="icon icon-star"></i>
+              <i class="icon icon-star"></i>
+              <i class="icon icon-star"></i>
             </div>
 
             <p>Апартаменты от 4000 р.</p>
 
-            <div class="row clearfix">
+            <div class="row">
               <div class="left">
-                <a class="btn btn-blue" href="#">Подробнее</a>
+                <a class="btn btn-primary" href="#">Подробнее</a>
               </div>
               <div class="left">
-                <a class="btn btn-brown" href="#">Забронировать</a>
+                <a class="btn btn-default" href="#">Забронировать</a>
               </div>
               <div class="right">
                 <span class="rating">Рейтинг: 9,2</span>
@@ -221,24 +226,24 @@
   </div>
 
   <footer>
-    <div class="content-row clearfix">
-      <div class="content-column">
+    <div class="row">
+      <div class="column">
         <h2>#visitsedona</h2>
       </div>
-      <div class="content-column">
-        <a href="#" class="social-btn social-btn-twitter">
-          <img src="/img/twitter.png" width="50" height="50">
+      <div class="column">
+        <a href="#" class="social-btn">
+          <i class="icon icon-twitter"></i>
         </a>
         <a href="#" class="social-btn social-btn-facebook">
-          <img src="/img/twitter.png" width="50" height="50">
+          <i class="icon icon-facebook"></i>
         </a>
         <a href="#" class="social-btn social-btn-youtube">
-          <img src="/img/twitter.png" width="50" height="50">
+          <i class="icon icon-youtube"></i>
         </a>
       </div>
-      <div class="content-column">
+      <div class="column">
         <div class="copyright">
-          <img src="/img/copyright.png" width="100" height="50">
+          <img src="img/copyright.png" width="217" height="33">
         </div>
       </div>
     </div>
