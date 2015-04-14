@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -9,4 +11,101 @@ body {
 h1, h2 {
   font-size: 21px;
   line-height: 26px;
+}
+
+/* Grid */
+
+.main-container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.container {
+  padding: 20px 50px;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.row:after, .clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row {
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.column {
+  float: left;
+  width: 33%;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.column:last-child {
+  width: 34%;
+}
+
+.column-span {
+  float: left;
+  width: 66%;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.column-span:last-child {
+  width: 67%;
+}
+
+.left {
+  float: left;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.right {
+  float: right;
+
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.title img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.filter .container > .left .filter-block {
+  float: left;
+  margin-right: 30px;
+}
+
+.hotels article {
+  /* scheme */
+  outline: 1px solid black;
+}
+
+.hotels article img {
+  width: 135px;
+
+  position: absolute;
+}
+
+.hotels article .details {
+  padding-left: 165px;
 }
