@@ -1,5 +1,45 @@
 /***** Base *****/
 
+@font-face {
+  font-family: 'symbols-sedona';
+  src: url('../font/symbols-sedona.eot');
+  src: url('../font/symbols-sedona.woff') format('woff'),
+  url('../font/symbols-sedona.ttf') format('truetype'),
+  url('../font/symbols-sedona.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-sedona";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 body {
   margin: 0;
 
@@ -138,7 +178,50 @@ header nav .active a:active {
 
 /***** Footer *****/
 
+footer {
+  position: relative;
+  z-index: 1;
 
+  background: rgba(255, 255, 255, .9);
+}
+
+footer .column {
+  height: 50px;
+  padding: 35px 0;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-tag {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.social a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+
+  font-size: 19px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #fff;
+  background: #81b3d2;
+}
+
+.icon-facebook:before {
+  content: '\66';
+}
+
+.icon-twitter:before {
+  content: '\74';
+}
+
+.icon-youtube:before {
+  content: '\f39e';
+}
 
 /***** Index content *****/
 
@@ -186,13 +269,13 @@ header nav .active a:active {
 
 .feature {
   height: 165px;
-  padding: 45px 19%;
+  padding: 45px 18%;
 
   text-align: center;
 }
 
 .feature h2 {
-  margin: 0 19% 10px;
+  margin: 0 10% 10px;
 }
 
 .feature-number {
@@ -250,7 +333,8 @@ header nav .active a:active {
   height: 255px;
 
   background: #f2f2f2 no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  background-position-y: center;
 }
 
 .feature-image-1 {
@@ -264,6 +348,17 @@ header nav .active a:active {
 .filter .container > .left .filter-block {
   float: left;
   margin-right: 30px;
+}
+
+.map {
+  position: relative;
+  top: 120px;
+
+  height: 595px;
+  margin-top: -120px;
+
+  background: #f2f2f2 url("../img/img-map-index.jpg") no-repeat;
+  background-size: cover;
 }
 
 /***** Hotels content *****/
@@ -321,3 +416,16 @@ header nav .active a:active {
   background-position: -10px -192px;
 }
 */
+
+/*
+.icon-facebook:before { content: '\66'; } /!* 'f' *!/
+.icon-twitter:before { content: '\74'; } /!* 't' *!/
+.icon-up-dir:before { content: '\25b2'; } /!* '?' *!/
+.icon-down-dir:before { content: '\25bc'; } /!* '?' *!/
+.icon-star:before { content: '\2605'; } /!* '?' *!/
+.icon-check-off:before { content: '\2610'; } /!* '?' *!/
+.icon-check-on:before { content: '\2611'; } /!* '?' *!/
+.icon-calendar:before { content: '\e800'; } /!* '?' *!/
+.icon-plus:before { content: '\e801'; } /!* '?' *!/
+.icon-minus:before { content: '\e802'; } /!* '?' *!/
+.icon-youtube:before { content: '\f39e'; } /!* '?' *!/*/
