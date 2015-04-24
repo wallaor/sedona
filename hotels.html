@@ -62,12 +62,12 @@
 
             <p>
               <input id="hotel" type="checkbox" name="apartment-type" value="" checked>
-              <label for="hotel">Бассейн</label>
+              <label for="hotel">Гостиница</label>
             </p>
 
             <p>
               <input id="motel" type="checkbox" name="apartment-type" value="" checked>
-              <label for="motel">Парковка</label>
+              <label for="motel">Мотель</label>
             </p>
 
             <p>
@@ -80,9 +80,27 @@
           <div class="filter-block">
             <h2>Стоимость в сутки (р):</h2>
 
-            <div class="range-slider"></div>
+            <div class="range-filter">
+              <div class="value-controls">
+                <div class="min-value-control">
+                  <span>от </span><input type="text" value="0">
+                </div>
+                <div class="max-value-control">
+                  <span>до </span><input type="text" value="3000">
+                </div>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div style="width:75%;" class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+            </div>
 
-            <input type="submit" value="Показать">
+            <div class="filter-submit">
+              <input type="submit" value="Показать">
+            </div>
           </div>
         </div>
       </div>
@@ -91,21 +109,21 @@
 
   <div class="sort">
     <div class="container clearfix">
-      <div class="left">
+      <div class="sort-type left">
         <p>
           <span class="filter-result">Найдено: 3</span>
           <span>Сортировка:</span>
-          <a href="#">по цене</a>
+          <a class="active" href="#">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по рейтингу</a>
         </p>
       </div>
-      <div class="right">
+      <div class="sort-direction right">
         <p>
           <a href="#">
             <i class="icon-arrow-up"></i>
           </a>
-          <a href="#">
+          <a class="active" href="#">
             <i class="icon-arrow-down"></i>
           </a>
         </p>
@@ -152,7 +170,7 @@
           <img src="img/img-hotel-2.jpg" width="135" height="90" alt="">
 
           <div class="details">
-            <h2><a href="#">Desert Quanil Inn</a></h2>
+            <h2><a href="#">Desert Quail Inn</a></h2>
 
             <div class="booking clearfix">
               <div class="left">
@@ -215,21 +233,25 @@
       </div>
       <div class="column">
         <div class="social">
-          <a href="#">
+          <a class="btn btn-primary" href="#">
             <i class="icon-twitter"></i>
           </a>
-          <a href="#">
+          <a class="btn btn-primary" href="#">
             <i class="icon-facebook"></i>
           </a>
-          <a href="#">
+          <a class="btn btn-primary" href="#">
             <i class="icon-youtube"></i>
           </a>
         </div>
       </div>
       <div class="column">
         <div class="copyright">
-          Website by
-          <a href="#"><i class="copyright-icon"></i></a>
+          <p>
+            Website by
+            <a href="#">
+              <i class="copyright-icon"></i>
+            </a>
+          </p>
         </div>
       </div>
     </div>
