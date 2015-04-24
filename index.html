@@ -7,7 +7,7 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet'
         type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 <div class="main-container">
@@ -15,7 +15,7 @@
     <nav>
       <ul>
         <li>
-          <a href="#">Информация</a>
+          <a href="hotels.html">Информация</a>
         </li>
         <li>
           <a href="#">Фото и видео</a>
@@ -105,72 +105,78 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="column">
-      <div class="feature feature-info">
-        <h2>Небольшая площадь</h2>
+  <div class="search-modal-sheet">
+    <div class="row">
+      <div class="column">
+        <div class="feature feature-info">
+          <h2>Небольшая площадь</h2>
 
-        <span class="feature-number">№3</span>
+          <span class="feature-number">№3</span>
 
-        <p>Все достопримеча&shy;тельности находятся очень близко</p>
+          <p>Все достопримеча&shy;тельности находятся очень близко</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="feature feature-info">
+          <h2>Красивая дорога</h2>
+
+          <span class="feature-number">№4</span>
+
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="feature feature-info">
+          <h2>Мало туристов</h2>
+
+          <span class="feature-number">№5</span>
+
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </div>
     </div>
-    <div class="column">
-      <div class="feature feature-info">
-        <h2>Красивая дорога</h2>
 
-        <span class="feature-number">№4</span>
+    <div class="hero">
+      <h2 class="search-title">Заинтересовались?</h2>
 
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </div>
+      <p>
+        Укажите предполагаемые даты поездки
+        и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
     </div>
-    <div class="column">
-      <div class="feature feature-info">
-        <h2>Мало туристов</h2>
 
-        <span class="feature-number">№5</span>
-
-        <p>Большинство едет в Гранд Каньон и толпится там</p>
-      </div>
-    </div>
+    <a class="btn btn-block btn-huge search-btn">Поиск гостиницы в Седоне</a>
   </div>
 
-  <div class="hero">
-    <h2 class="search-title">Заинтересовались?</h2>
-
-    <p>
-      Укажите предполагаемые даты поездки
-      и мы покажем вам лучшие предложения гостиниц в Седоне
-    </p>
-  </div>
-
-  <div class="search">
-    <button class="btn btn-block">Поиск гостиницы в Седоне</button>
-
+  <div class="search-container">
     <div class="search-modal">
       <form>
-        <p>
+        <p class="icon-calendar">
           <label for="arrive">Дата заезда:</label>
-          <input id="arrive" type="date" name="arrive">
+          <input class="date" id="arrive" type="text" name="arrive">
         </p>
 
-        <p>
+        <p class="icon-calendar">
           <label for="departure">Дата выезда:</label>
-          <input id="departure" type="date" name="departure">
+          <input class="date" id="departure" type="text" name="departure">
         </p>
 
         <div class="age-input clearfix">
           <p>
             <label for="adults">Взрослые:</label>
-            <input id="adults" type="number" min="0" name="adults">
+            <span class="age-input-container">
+              <input class="number" id="adults" type="text" name="adults">
+            </span>
           </p>
 
           <p>
             <label for="kids">Дети:</label>
-            <input id="kids" type="number" min="0" name="kids">
+            <span class="age-input-container">
+              <input class="number" id="kids" type="text" name="kids">
+            </span>
           </p>
         </div>
-        <input class="btn btn-primary btn-block" type="submit" value="Найти">
+        <input class="btn btn-primary btn-block btn-big" type="submit" value="Найти">
       </form>
     </div>
   </div>
@@ -208,5 +214,8 @@
     </div>
   </footer>
 </div>
+
+<script src="js/search-modal.min.js"></script>
+
 </body>
 </html>
