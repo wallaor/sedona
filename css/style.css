@@ -516,7 +516,7 @@ footer .column {
   margin-bottom: 30px;
 }
 
-.search-modal p:before {
+.search-modal p:after {
   content: "";
   display: table;
   clear: both;
@@ -553,75 +553,18 @@ footer .column {
   background: #fff;
 }
 
-.search-modal input.date {
+.search-modal input[type="date"] {
   float: right;
 
   width: 346px;
 }
 
-.search-modal input.number {
+.search-modal input[type="number"] {
+  float: right;
+
   width: 114px;
-  padding: 6px 38px;
 
   text-align: center;
-}
-
-.search-modal p.icon-calendar:after {
-  content: '\e800';
-
-  position: absolute;
-  right: 10px;
-
-  color: #c0c0c0;
-
-  font-family: "symbols-sedona";
-  font-size: 21px;
-  font-weight: normal;
-}
-
-.age-input-container {
-  position: relative;
-
-  float: right;
-}
-
-.age-input-container:before {
-  content: '\e802';
-
-  position: absolute;
-  left: 14px;
-
-  color: #c0c0c0;
-
-  font-family: "symbols-sedona";
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.age-input-container:after {
-  content: '\e801';
-
-  position: absolute;
-  right: 14px;
-  top: 0;
-
-  color: #c0c0c0;
-
-  font-family: "symbols-sedona";
-  font-size: 14px;
-  font-weight: normal;
-}
-
-.search-modal p.icon-calendar:hover:after,
-.age-input-container:hover:before,
-.age-input-container:hover:after {
-  color: #000;
-}
-
-.search-modal p.icon-calendar:active:after,
-.age-input-container:active:before,
-.age-input-container:active:after {
-  color: #81b3d2;
 }
 
 .age-input p:first-child {

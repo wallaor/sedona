@@ -7,7 +7,7 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet'
         type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="main-container">
@@ -151,29 +151,25 @@
   <div class="search-container">
     <div class="search-modal">
       <form>
-        <p class="icon-calendar">
+        <p>
           <label for="arrive">Дата заезда:</label>
-          <input class="date" id="arrive" type="text" name="arrive">
+          <input id="arrive" type="date" name="arrive">
         </p>
 
-        <p class="icon-calendar">
+        <p>
           <label for="departure">Дата выезда:</label>
-          <input class="date" id="departure" type="text" name="departure">
+          <input id="departure" type="date" name="departure">
         </p>
 
         <div class="age-input clearfix">
           <p>
             <label for="adults">Взрослые:</label>
-            <span class="age-input-container">
-              <input class="number" id="adults" type="text" name="adults">
-            </span>
+            <input id="adults" type="number" name="adults">
           </p>
 
           <p>
             <label for="kids">Дети:</label>
-            <span class="age-input-container">
-              <input class="number" id="kids" type="text" name="kids">
-            </span>
+            <input id="kids" type="number" name="kids">
           </p>
         </div>
         <input class="btn btn-primary btn-block btn-big" type="submit" value="Найти">
