@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
   <meta charset="UTF-8">
   <title>Седона</title>
 
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet'
-        type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet"
+        type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="main-container">
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="hotels.html">Информация</a>
-        </li>
-        <li>
-          <a href="#">Фото и видео</a>
-        </li>
-        <li class="nav-logo">
-          <a href="#">
-            <img src="img/logo-header.png" width="138" height="70" alt="Главная">
-          </a>
-        </li>
-        <li>
-          <a href="#">Карта штата</a>
-        </li>
-        <li>
-          <a href="#">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+
+  <ul class="main-nav">
+    <li>
+      <a href="hotels.html">Информация</a>
+    </li>
+    <li>
+      <a href="#">Фото и видео</a>
+    </li>
+    <li class="nav-logo">
+      <a href="#">
+        <img src="img/logo-header.png" width="138" height="70" alt="Главная">
+      </a>
+    </li>
+    <li>
+      <a href="#">Карта штата</a>
+    </li>
+    <li>
+      <a href="#">Гостиницы</a>
+    </li>
+  </ul>
 
   <div class="title">
     <img src="img/title-index.png" width="458" height="352" alt="">
@@ -56,7 +53,9 @@
       </div>
     </div>
     <div class="column-span">
-      <div class="feature-image feature-image-1"></div>
+      <div class="feature-image">
+        <img src="img/img-feature-1.jpg" width="1600" height="800" alt="">
+      </div>
     </div>
   </div>
 
@@ -92,7 +91,9 @@
 
   <div class="row">
     <div class="column-span">
-      <div class="feature-image feature-image-2"></div>
+      <div class="feature-image">
+        <img src="img/img-feature-2.jpg" width="1600" height="800" alt="">
+      </div>
     </div>
     <div class="column">
       <div class="feature feature-primary">
@@ -153,23 +154,37 @@
       <form>
         <p>
           <label for="arrive">Дата заезда:</label>
-          <input id="arrive" type="date" name="arrive">
+          <span class="control-date">
+            <input id="arrive" type="date" name="arrive">
+            <button class="calendar-btn"></button>
+          </span>
         </p>
 
         <p>
           <label for="departure">Дата выезда:</label>
-          <input id="departure" type="date" name="departure">
+          <span class="control-date">
+            <input id="departure" type="date" name="departure">
+            <button class="calendar-btn"></button>
+          </span>
         </p>
 
         <div class="age-input clearfix">
           <p>
             <label for="adults">Взрослые:</label>
-            <input id="adults" type="number" name="adults">
+            <span class="control-number">
+              <button class="minus-btn"></button>
+              <input id="adults" type="number" name="adults">
+              <button class="plus-btn"></button>
+            </span>
           </p>
 
           <p>
             <label for="kids">Дети:</label>
-            <input id="kids" type="number" name="kids">
+            <span class="control-number">
+              <button class="minus-btn"></button>
+              <input id="kids" type="number" name="kids">
+              <button class="plus-btn"></button>
+            </span>
           </p>
         </div>
         <input class="btn btn-primary btn-block btn-big" type="submit" value="Найти">
@@ -179,36 +194,35 @@
 
   <div class="map"></div>
 
-  <footer>
-    <div class="row">
-      <div class="column">
-        <h2 class="footer-tag">#visitsedona</h2>
-      </div>
-      <div class="column">
-        <div class="social">
-          <a class="btn btn-primary" href="#">
-            <i class="icon-twitter"></i>
-          </a>
-          <a class="btn btn-primary" href="#">
-            <i class="icon-facebook"></i>
-          </a>
-          <a class="btn btn-primary" href="#">
-            <i class="icon-youtube"></i>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="copyright">
-          <p>
-            Website by
-            <a href="#">
-              <i class="copyright-icon"></i>
-            </a>
-          </p>
-        </div>
+  <div class="row footer-row">
+    <div class="column">
+      <h2 class="footer-tag">#visitsedona</h2>
+    </div>
+    <div class="column">
+      <div class="social">
+        <a class="btn btn-primary" href="#">
+          <i class="icon-twitter"></i>
+        </a>
+        <a class="btn btn-primary" href="#">
+          <i class="icon-facebook"></i>
+        </a>
+        <a class="btn btn-primary" href="#">
+          <i class="icon-youtube"></i>
+        </a>
       </div>
     </div>
-  </footer>
+    <div class="column">
+      <div class="copyright">
+        <p>
+          Website by
+          <a href="#">
+            <i class="copyright-icon"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script src="js/search-modal.min.js"></script>
