@@ -343,7 +343,7 @@ h2 {
 
   height: 510px;
 
-  background: #f2f2f2 url("../img/bg-title-index.jpg") no-repeat;
+  background: #81b3d2 url("../img/bg-title-index.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -598,21 +598,6 @@ h2 {
   width: 179px;
 }
 
-.control-date .calendar-btn,
-.control-number .plus-btn,
-.control-number .minus-btn {
-  width: 38px;
-  height: 38px;
-  margin: 0;
-  padding: 6px;
-
-  vertical-align: top;
-
-  border: 0;
-  outline: none;
-  background: #f2f2f2;
-}
-
 .control-date {
   float: right;
 
@@ -624,17 +609,6 @@ h2 {
 
 .control-date input {
   width: 308px;
-}
-
-.control-date .calendar-btn:before {
-  content: "\e800";
-
-  color: #c0c0c0;
-
-  font-family: "symbols-sedona";
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 26px;
 }
 
 .control-number {
@@ -651,34 +625,47 @@ h2 {
   text-align: center;
 }
 
-.control-number .plus-btn:before {
-  content: "\e801";
-}
+.control-btn {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 6px;
 
-.control-number .minus-btn:before {
-  content: "\e802";
-}
+  vertical-align: top;
 
-.control-number .plus-btn:before,
-.control-number .minus-btn:before {
   color: #c0c0c0;
+  border: 0;
+  outline: none;
+  background: #f2f2f2;
 
   font-family: "symbols-sedona";
-  font-size: 14px;
+  font-size: 21px;
   font-weight: normal;
   line-height: 26px;
 }
 
-.control-date .calendar-btn:hover:before,
-.control-number .plus-btn:hover:before,
-.control-number .minus-btn:hover:before {
+.control-btn:hover {
   color: #000;
 }
 
-.control-date .calendar-btn:active:before,
-.control-number .plus-btn:active:before,
-.control-number .minus-btn:active:before {
+.control-btn:active {
   color: #81b3d2;
+}
+
+.control-number .control-btn {
+  font-size: 14px;
+}
+
+.icon-calendar:before {
+  content: "\e800";
+}
+
+.icon-plus:before {
+  content: "\e801";
+}
+
+.icon-minus:before {
+  content: "\e802";
 }
 
 .search-modal .btn {
@@ -702,7 +689,7 @@ h2 {
   min-height: 217px;
 
   color: #fff;
-  background: #f2f2f2 url("../img/bg-filter.jpg") no-repeat;
+  background: #81b3d2 url("../img/bg-filter.jpg") no-repeat;
   background-size: cover;
 }
 
